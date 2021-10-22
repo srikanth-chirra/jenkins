@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('git') {
+            steps {
+                echo 'Hello git'
+            }
+        }
+        stage('Build-git') {
+            steps {
+                echo 'being Built'
+            }
+        }
+        stage('Test-git') {
+            steps {
+                echo 'Being tested'
+            }
+        }
+        stage('Release-git') {
+            steps {
+                echo 'Release on its way'
+            }
+        }
+        
+    }
+}
